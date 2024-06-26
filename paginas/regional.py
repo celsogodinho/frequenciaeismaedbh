@@ -122,17 +122,9 @@ def regional(nome_regional, regional_id, dias_letivos, ano, mes):
         },
         'subtitle': {
                 'text': 'Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s'%(meses[mes], ano, dias_letivos),
-        },  
-        'yaxis': {
-            'labels': {
-                'maxWidth': 500,
-            }            
-        },      
+        },     
         'xaxis': {
           'categories':  resultado['nome'].tolist(),
-        },
-        'fill': {
-          'opacity': 1
         },
         'legend': {
           'position': 'top',
