@@ -75,7 +75,7 @@ def busca_resultados(dias_letivos, ano):
 def rme(dias_letivos, ano, mes):
     st.header("Secretaria Municipal de Educação - PBH", divider='rainbow')
     st.subheader("Percentual de Alunos de 4 e 5 anos da Educação Infantil por Taxa de Infrequência na RME")
-    st.write('Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s'%(meses[mes], ano, dias_letivos))
+    st.write('Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s - Dados atualizados em 25/06/2024'%(meses[mes], ano, dias_letivos))
 
     resultado = busca_resultados(dias_letivos, ano)
 
