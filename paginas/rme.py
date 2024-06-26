@@ -130,11 +130,6 @@ def rme(dias_letivos, ano, mes):
         'subtitle': {
                 'text': 'Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s'%(meses[mes], ano, dias_letivos),
         },  
-        'yaxis': {
-            'labels': {
-                'maxWidth': 1100,
-            }            
-        },      
         'xaxis': {
           'categories':  ['BARREIRO','CENTRO SUL','LESTE','NORDESTE','NOROESTE','NORTE','OESTE','PAMPULHA','VENDA NOVA'],
         },
