@@ -120,7 +120,7 @@ def rme(dias_letivos, ano, mes):
           },
         },
         'stroke': {
-          'width': 0.8,
+          'width': 1,
           'colors': ['#fff']
         },
         'title': {
@@ -132,10 +132,6 @@ def rme(dias_letivos, ano, mes):
         },  
         'xaxis': {
           'categories':  ['BARREIRO','CENTRO SUL','LESTE','NORDESTE','NOROESTE','NORTE','OESTE','PAMPULHA','VENDA NOVA'],
-        },
-        'fill': {
-          'opacity': 1
-        
         },
         'legend': {
           'position': 'top',
