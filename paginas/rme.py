@@ -152,7 +152,7 @@ def rme(dias_letivos, ano, mes):
               dict(name='Entre 35% e 40%',data=resultado['p_35_40'].tolist()),
               dict(name='Maior ou igual à 40%',data=resultado['p_40_100'].tolist())]
 
-    st_apexcharts(options, series, 'bar', 1500)    
+    st_apexcharts(options, series, 'bar', 1100)    
 
     rename = {
         'regional':'Regional', 
