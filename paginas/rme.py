@@ -132,7 +132,7 @@ def rme(dias_letivos, ano, mes):
         },  
         'yaxis': {
             'labels': {
-                'maxWidth': 1200,
+                'maxWidth': 1100,
             }            
         },      
         'xaxis': {
