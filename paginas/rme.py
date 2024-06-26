@@ -120,7 +120,7 @@ def rme(dias_letivos, ano, mes):
           },
         },
         'stroke': {
-          'width': 1,
+          'width': 0.8,
           'colors': ['#fff']
         },
         'title': {
