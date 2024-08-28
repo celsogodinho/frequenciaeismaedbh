@@ -1,5 +1,5 @@
 import streamlit as st
-from helpers import obtem_conexao, meses
+from helpers import obtem_conexao, meses, DT_ATUALIZACAO
 from streamlit_apexjs import st_apexcharts
 from streamlit_extras.metric_cards import style_metric_cards
 
@@ -45,7 +45,7 @@ def busca_resultados(regional_id, dias_letivos, ano):
         and e.regional = %s
         and t.cod_sequ_turm = a.cod_turm_atua
         and t.ensino in (5,6)
-        and 100*(cast(fa.total_sem_jus as float)/%s) >= 25.0
+        and 100*(cast(fa.total_sem_jus as float)/%s) >= 40.0
         group by e.cod_escl
     '''%(ano, regional_id, dias_letivos)
 
@@ -82,7 +82,7 @@ def busca_resultados(regional_id, dias_letivos, ano):
 def regional(nome_regional, regional_id, dias_letivos, ano, mes):
     st.header("Secretaria Municipal de Educação - PBH", divider='rainbow')
     st.subheader('Percentual de Alunos de 4 e 5 anos da Educação Infantil do Ensino Fundamental por Taxa de Infrequência na %s'%nome_regional)
-    st.write('Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s - Dados atualizados em 25/06/2024'%(meses[mes], ano, dias_letivos))
+    st.write('Acumulado de Fevereiro à  %s de %s - Dias Letivos no período: %s - Dados atualizados em %s'%(meses[mes], ano, dias_letivos, DT_ATUALIZACAO))
 
     resultado = busca_resultados(regional_id, dias_letivos, ano)
 

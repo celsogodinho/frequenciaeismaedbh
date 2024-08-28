@@ -1,5 +1,7 @@
 import streamlit as st
 
+DT_ATUALIZACAO = '27/08/2024'
+
 meses = {
     1:'Janeiro',
     2:'Fevereiro',
