@@ -26,7 +26,7 @@ dias_letivos = {
 
 dias_letivos_acumulados = 0
 for i in range(2, mes_atual+2):
-    dias_letivos_acumulados += dias_letivos[2]
+    dias_letivos_acumulados += dias_letivos[i]
 
 ids_regionais = {
     "Regional Barreiro":1,
